@@ -1,0 +1,261 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+    display: flex;    
+    /* usamos el display para hacer la alineación del nav pero se necesitan 2 parametros mas */
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+nav img{
+    width: 30%;
+}
+
+nav p{
+    color: rgb(4, 0, 255);
+    /* background-color: aliceblue; */
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-shadow: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+header a{
+    text-decoration: none;
+    color:white;
+    /* se establece un borde */
+    border: solid 1px black;
+    background-color: rgb(4, 0, 255);
+    /* padding se usa para hacer el espaciado */
+    padding: 10px;
+    /* se establece el borde y su radio */
+    border-radius: 20px;
+}
+
+li{
+    margin: 30px;
+    list-style-type: none;
+    /* le quitamos los puntos a los botones */
+}
+
+
+    
+
+/* termina barra de navegacion */
+/*------------------------------------------------------------------------------------------------------*/
+
+header{
+    background: linear-gradient(rgb(228, 231, 196), aquamarine,#fff, white);
+    width: 100%;
+    height: 100vh;  
+
+}
+
+
+.caja{
+    display: flex;
+    height: 70%;
+    align-items: center;
+
+}
+.cajita{
+    width: 50%;
+    text-align: center;
+}
+.cajita img{
+    width: 100%;
+}
+span{
+    color: rgb(229, 231, 72);
+}
+h1{
+    font-size: 3.5em;
+}
+.cajita p{
+    margin-bottom: 30px;
+
+}
+
+.acercade{
+    height: 80vh;
+    width: 100%;
+    background: url(../vec2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.acerca1{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.acerca2{
+    width: 50%;
+    height: 50vh;
+    background: linear-gradient(to right, rgba(228, 231, 196, 0.596), rgba(127, 255, 212, 0.445),rgba(255, 255, 255, 0.534));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+/* pseudo clase hover  */
+/* es cambiar el estilo predeterminado de un elemento cuando pase algo(mover el click sobre de algo) */
+a:hover{
+    background-color: aquamarine;
+    color: black;
+    font-size: 30px;
+}
+.paralax{
+    width: 100%;
+    height: 50vh;
+    background: url(../din1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.paralax p{
+    width: 60%;
+    background-color: rgba(0, 0, 139, 0.574);
+    padding: 30px;
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px white,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 152px #0fa;
+
+}
+
+/* PORTAFOLIO CUADRO */
+.portafolio{
+    height: 100vh;
+    width: 100%;
+    background: url(../vec3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.portas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.porta1{
+    display: flex;
+    width: 60%;
+    height: 70vh;
+    border: solid 3px rgb(25, 120, 253);
+}
+
+.porta1 img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.porta1 img:hover{
+    cursor: crosshair;
+    width: 40%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Inicia el apartado de contacto */
+.cont{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient( white ,#fff,aquamarine, rgb(228, 231, 196));
+}
+.cont1{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont2{
+    width: 60%;
+    height: 60vh;
+    background: #0fa;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border: solid 3px blue;
+    /* color: blue; */
+    border-radius: 3px;
+}
+.boton{
+    color: rgb(4, 0, 255);
+    border: solid 1px black;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 10px; 
+    right: 10px;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    background-color: rgb(228, 231, 196);
+    justify-items: center;
+    align-items: center;
+}
+footer img{
+    margin-right: 50px;
+}
+
